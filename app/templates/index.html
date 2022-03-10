@@ -1,1 +1,10 @@
-<h1> hello </h1>
+{% extends 'components/layout.html' %}
+
+
+{% block leftcol %}
+<img class="img-fluid" src="https://media.altpress.com/uploads/2018/07/Jack_Sparrow_-_Pirates_Of_The_Caribbean.jpg" alt="Confusion">
+{% endblock leftcol %}
+
+{% block rightcol %}
+    <h1> Hello, {{ name }}! Welcome to Flask :) </h1>  
+{% endblock rightcol %}
